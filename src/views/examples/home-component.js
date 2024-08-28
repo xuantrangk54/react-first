@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ChildComponent from '../ChildComponent';
+import HelloComponent from '../HelloComponent';
 class HomeComponent extends React.Component {
     state = {
         firstName: '',
@@ -57,6 +58,7 @@ class HomeComponent extends React.Component {
                     <input type='button' value="submit" onClick={(event)=>this.handleSubmit(event)}/>
                 </form>
                 <ChildComponent name={"nguyen xuan trang"} jobList={this.state.jobList}/>
+                <HelloComponent name={"trang helloCompnent"}/>
             </>
         )
     }
