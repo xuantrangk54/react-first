@@ -4,14 +4,21 @@ class HomeComponent extends React.Component {
         name: 'Trang',
         channel: 'xuantrangk54'
     }
+
+    handleClickButton = ()=>{
+        console.log ("clicked me");
+    }
+
     render() {
 
         let hometown = 'Thai Binh';
-        { console.log(hometown); }
         return (
             <>
                 <div className="t">{hometown} welcome {this.state.name}</div>
-                <div>My channel is: {this.state.channel}</div>
+                <div>
+                    <p>My channel is: {this.state.channel}</p>
+                    <button onClick={()=>{this.handleClickButton()}}>Click me</button>
+                </div>
             </>
         )
     }
