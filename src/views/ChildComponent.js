@@ -7,8 +7,7 @@ class ChildComponent extends React.Component {
 
 
     render() {
-
-        let hometown = 'Thai Binh';
+        console.log (this.props);
         return (
             <>
                <h1>Child component</h1>
