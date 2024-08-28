@@ -7,10 +7,19 @@ class ChildComponent extends React.Component {
 
 
     render() {
-        console.log (this.props);
+        let jobList = this.props.jobList;
         return (
             <>
                <h1>Child component</h1>
+               {
+                jobList.map ((item, index)=>{
+                    return (
+                        <div>
+                            {item.name} - {item.salary}
+                        </div>
+                    )
+                })
+               }
             </>
         )
     }

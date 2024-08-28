@@ -3,7 +3,17 @@ import ChildComponent from '../ChildComponent';
 class HomeComponent extends React.Component {
     state = {
         firstName: '',
-        lastName: ''
+        lastName: '',
+        jobList:  [
+            {
+                "name":"1",
+                "salary":1000
+            },
+            {
+                "name":"2",
+                "salary":2000
+            }
+        ]
     }
 
     handleClickButton = () => {
@@ -46,7 +56,7 @@ class HomeComponent extends React.Component {
                     <input type="text" value={this.state.lastName} onChange={(event)=>this.handleChangeLastName(event)}/><br />
                     <input type='button' value="submit" onClick={(event)=>this.handleSubmit(event)}/>
                 </form>
-                <ChildComponent name={"nguyen xuan trang"}/>
+                <ChildComponent name={"nguyen xuan trang"} jobList={this.state.jobList}/>
             </>
         )
     }
