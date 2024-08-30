@@ -49,6 +49,7 @@ class AddComponent extends React.Component {
           <input type="text" value={this.state.title} onChange={(event) => this.handleChangeFirstName(event)} /><br />
           <label htmlFor="lname">Salary:</label><br />
           <input type="text" value={this.state.slary} onChange={(event) => this.handleChangeLastName(event)} /><br />
+          <span>x</span>
           <input type='button' value="submit" onClick={(event) => this.handleSubmit(event)} />
         </form></>
     );
