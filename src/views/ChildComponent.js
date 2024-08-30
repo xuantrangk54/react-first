@@ -15,7 +15,7 @@ class ChildComponent extends React.Component {
                 jobList.map ((item, index)=>{
                     return (
                         <div>
-                            {item.name} - {item.salary}
+                            {item.title} - {item.salary}
                         </div>
                     )
                 })
