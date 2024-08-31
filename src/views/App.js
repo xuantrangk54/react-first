@@ -5,7 +5,6 @@ import HomeComponent from './examples/home-component';
 function App() {
   return (
     <>
-      <h1>APP Component</h1>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

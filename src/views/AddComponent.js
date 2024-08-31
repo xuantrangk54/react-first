@@ -8,7 +8,10 @@ class AddComponent extends React.Component {
     salary: ''
   }
 
-
+  componentDidMount (prevProps, prevState) {
+    console.log ("pre state: ", prevState, "current state: ", this.state);
+    console.log ("pre propos: ", prevState);
+  }
 
   handleChangeFirstName = (event) => {
     this.setState({
